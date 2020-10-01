@@ -1,0 +1,97 @@
+x=1
+local string_1 = "CreatePart";
+local string_2 = "Normal";
+local userdata_1 = CFrame.new(5511.40283, 29.0002441, -17077.5039, 1, 0, 0, 0, 1, 0, 0, 0, 1);
+local userdata_2 = game:GetService("Workspace");
+local Target = game:GetService("Workspace").kuragga["Building Tools"].SyncAPI.ServerEndpoint;
+Target:InvokeServer(string_1, string_2, userdata_1, userdata_2);
+for i, v in pairs(workspace:GetDescendants()) do
+    if v:IsA("Part") and v.CFrame == userdata_1 and v.Size == Vector3.new(4,1,2) then
+        v.Name = "Map By kuraga#4659"
+        local part = v
+        local table_1 = {
+            {
+                ["Part"] = part,
+                ["CFrame"] = part.CFrame,
+                ["Size"] = Vector3.new(.35, 14.64, .35)
+            }
+        }
+        workspace.kuragga["Building Tools"].SyncAPI.ServerEndpoint:InvokeServer("SyncResize", table_1)
+        local table_1 = {
+        	[1] = {
+        		["UnionColoring"] = true,
+        		["Color"] = Color3.new(0.105882, 0.164706, 0.207843),
+        		["Part"] = part
+        	}
+        };
+        local Target = game:GetService("Workspace").kuragga["Building Tools"].SyncAPI.ServerEndpoint;
+        Target:InvokeServer("SyncColor", table_1);
+        
+        local string_1 = "SyncMaterial";
+        local table_1 = {
+        				[1] = {
+        					["Part"] = part,
+        					["Material"] = 'DiamondPlate'
+        				}
+        };
+        local Target = game:GetService("Workspace").kuragga["Building Tools"].SyncAPI.ServerEndpoint;
+        Target:InvokeServer(string_1, table_1);
+
+    end
+end
+
+local string_1 = "CreatePart";
+local string_2 = "Normal";
+local userdata_1 = CFrame.new(5511.5626, 33.375058, -17077.4824, 1, 0, 0, 0, 1, 0, 0, 0, 1);
+local userdata_2 = game:GetService("Workspace");
+local Target = game:GetService("Workspace").kuragga["Building Tools"].SyncAPI.ServerEndpoint;
+Target:InvokeServer(string_1, string_2, userdata_1, userdata_2);
+for i, v in pairs(workspace:GetDescendants()) do
+    if v:IsA("Part") and v.CFrame == userdata_1 and v.Size == Vector3.new(4,1,2) then
+        v.Name = "Map By kuraga#4659"
+        local part = v
+        local table_1 = {
+            {
+                ["Part"] = part,
+                ["CFrame"] = part.CFrame,
+                ["Size"] = Vector3.new(.09,5.7,3.77)
+            }
+        }
+        workspace.kuragga["Building Tools"].SyncAPI.ServerEndpoint:InvokeServer("SyncResize", table_1)
+        
+        local table_1 = {
+        	[1] = {
+        		["UnionColoring"] = true,
+        		["Color"] = Color3.new(0.458824, 0, 0),
+        		["Part"] = part
+        	}
+        };
+        local Target = game:GetService("Workspace").kuragga["Building Tools"].SyncAPI.ServerEndpoint;
+        Target:InvokeServer("SyncColor", table_1);
+
+    end
+end
+
+local string_1 = "CreatePart";
+local string_2 = "Cylinder";
+local userdata_1 = CFrame.new(5511.57764, 36.2636719, -17077.4844, 1, 0, 0, 0, 1, 0, 0, 0, 1);
+local userdata_2 = game:GetService("Workspace");
+local Target = game:GetService("Workspace").kuragga["Building Tools"].SyncAPI.ServerEndpoint;
+Target:InvokeServer(string_1, string_2, userdata_1, userdata_2);
+for i, v in pairs(workspace:GetDescendants()) do
+    if v:IsA("Cylinder") and v.CFrame == userdata_1 and v.Size == Vector3.new(4,1,2) then
+        v.Name = "Map By kuraga#4659"
+        local part = v
+        
+        local string_1 = "SyncRotate";
+        local table_1 = {
+        				[1] = {
+        					["Part"] = part,
+        					["CFrame"] = '5511.57764, 36.2636719, -17077.4844, 1.19248806e-08, 0, -1, 0, 1, 0, 1, 0, 1.19248806e-08'
+        						}
+        };
+        local Target = game:GetService("Workspace").kuragga["Building Tools"].SyncAPI.ServerEndpoint;
+        Target:InvokeServer(string_1, table_1);
+
+    end
+end
